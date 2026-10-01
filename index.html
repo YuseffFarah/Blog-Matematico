@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Matemático Interactivo</title>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            color: #222;
+
+        }
+        h1 {
+            color: #572364;
+            cursor: pointer;
+            border-bottom: 2px solid #572364;
+            padding-bottom: 5px;
+                         animation : slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(0); }
+        }
+        p {
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 4px;
+         animation : slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(0); }
+        }
+ table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+                    animation : fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+           
+            cursor: pointer;
+        }
+        th {
+            background-color: #800080;
+            color: white;
+	    text-align: center
+        }
+        ul, ol {
+            background-color: #fafafa;
+            padding: 15px 30px;
+            border: 1px solid #ddd;
+        }
+        li {
+            margin: 5px 0;
+            cursor: pointer;
+            padding: 4px;
+                         animation : fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }    
+            
+        }
+
+.oculto {
+display: none;
+}
+.resaltado {
+background-color: #d4efdf;
+color: #c0392b;
+}
+.cambio-color {
+color: #87CEEB;
+}
+</style>
+</head>
+<body>
+<h1 id="titulo" onclick="cambiarColorTitulo()">Blog Matemático Interactivo</h1>
+<p onclick="alternarLista('conceptos')">
+<Strong>Conceptos Básicos</Strong> (Haz clic aquí para mostrar u ocultar la lista)
+<ul id="conceptos">
+<li onclick="resaltarElemento(this)">Álgebra: Manipulación de símbolos y ecuaciones.</li>
+<li onclick="resaltarElemento(this)">Geometría: Estudio de las propiedades de figuras y espacios.</li>
+<li onclick="resaltarElemento(this)">Cálculo: Análisis del cambio y del movimiento.</li>
+<li onclick="resaltarElemento(this)">Estadística: Análisis y tratamiento de datos.</li>
+</ul>
+
+<p><Strong>Tabla de Fórmulas</Strong> (Haz clic en cualquier celda para cambiar su color)</p>
+<table>
+<tr>
+<th>Tema</th>
+<th>Fórmula</th>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Área del triángulo</td>
+<td onclick="resaltarElemento(this)">Base por altura dividido entre 2</td>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Teorema de Pitágoras</td>
+<td onclick="resaltarElemento(this)">a elevado al cuadrado más b elevado al cuadrado igual a c elevado al cuadrado</td>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Perímetro del círculo</td>
+<td onclick="resaltarElemento(this)">2 por Pi por radio</td>
+</tr>
+</table>
+
+
+<p onclick="alternarLista('pasos')">
+<Strong>Pasos para resolver un problema</Strong> (Haz clic aquí para mostrar u ocultar los pasos)
+</p>
+<ol id="pasos">
+<li onclick="resaltarElemento(this)">Comprender el problema planteado.</li>
+<li onclick="resaltarElemento(this)">Trazar un plan o seleccionar la fórmula.</li>
+<li onclick="resaltarElemento(this)">Ejecutar las operaciones requeridas.</li>
+<li onclick="resaltarElemento(this)">Revisar y verificar la solución.</li>
+</ol>
+<p><Strong>Ejemplos Tabla de Fórmulas</Strong> (Haz clic para resaltar el tema y click en la imagen para ver el ejemplo)
+</p>
+<table>
+<tr>
+<th>Tema</th>
+<th>Ejemplos </th>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Área del triángulo</td>
+<td>
+    <a href="https://www.youtube.com/watch?v=aLj2r6jL3sc"target="_blank">
+    <img src="https://www.proferecursos.com/wp-content/uploads/Area-del-Triangulo.jpg" alt="Área de unTriángulo" width="300"></td>
+    </a>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Teorema de Pitágoras</td>
+<td>
+    <a href="https://www.youtube.com/watch?v=eTEBvBIz8Ok" target="_blank">
+    <img src="https://www.matesfacil.com/pitagoras/teorema-Pitagoras.png" alt="Teorema de Pitágoras" width="200" height="300"></td>
+    </a>
+</tr>
+<tr>
+<td onclick="resaltarElemento(this)">Perímetro del círculo</Strong></td>
+<td> 
+    <a href="https://www.youtube.com/watch?v=GUAA75tXiko" target="_blank">
+    <img src="https://matematix.org/wp-content/uploads/perimetro-de-circulo-formulas-y-ejemplos-para-calcular-768x543.jpg" alt="Perímetro de un Círculo" width="300"></td>
+    </a>
+</tr>
+</table>
+
+<script>
+function cambiarColorTitulo() {
+var titulo = document.getElementById('titulo');
+titulo.classList.toggle('cambio-color');
+}
+function alternarLista(id) {
+var lista = document.getElementById(id);
+lista.classList.toggle('oculto');
+}
+function resaltarElemento(elemento) {
+elemento.classList.toggle('resaltado');
+}
+
+</script>
+</body>
+</html>

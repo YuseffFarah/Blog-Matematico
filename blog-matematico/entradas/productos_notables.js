@@ -10,9 +10,9 @@ contenidoEntrada = `
          <p>Desarrolla (x + 5)²</p>
 
          <ol>
-             <li> Cuadrado del primero: x²</li>
-             <li> Doble del primero por el segundo: 2(x)(5) = 10x</li>
-             <li> Cuadrado del segundo: 5² = 25</li>
+             <li> <strong>Cuadrado del primero:</strong> x²</li>
+             <li> <strong>Doble del primero por el segundo:</strong> 2(x)(5) = 10x</li>
+             <li> <strong>Cuadrado del segundo:</strong> 5² = 25</li>
          </ol>
 
          <p><strong>Resultado:</strong> x² + 10x + 25</p>
@@ -24,10 +24,10 @@ contenidoEntrada = `
          
          <p>Desarrolla (x + 3)³ </p>
           <ol>
-             <li> Cubo del primero: x³</li>
-             <li> Triple del primero al cuadrado por el segundo: 3(x²)(3) = 9x²</li>
-             <li>Triple del primero por el segundo al cuadrado: 3(x)(3²) = 3(x)(9) = 27x</li>
-             <li> Cubo del segundo: 3³ = 27</li>
+             <li> <strong>Cubo del primero:</strong> x³</li>
+             <li> <strong>Triple del primero al cuadrado por el segundo:</strong> 3(x²)(3) = 9x²</li>
+             <li> <strong>Triple del primero por el segundo al cuadrado:</strong> 3(x)(3²) = 3(x)(9) = 27x</li>
+             <li> <strong>Cubo del segundo:</strong> 3³ = 27</li>
          </ol>
         <p><strong>Resultado:</strong>x³ + 9x² + 27x + 27</p>
 
@@ -38,9 +38,9 @@ contenidoEntrada = `
 
                <p>Desarrolla (x + 6)(x + 4)</p>
           <ol>
-             <li>Cuadrado del término común: x²</li>
-             <li>Suma de los no comunes por el común: (6 + 4)x = 10x</li>
-             <li>Producto de los no comunes: (6)(4) = 24</li>
+             <li> <strong>Cuadrado del término común:</strong> x²</li>
+             <li> <strong>Suma de los no comunes por el común:</strong> (6 + 4)x = 10x</li>
+             <li> <strong>Producto de los no comunes:</strong> (6)(4) = 24</li>
          </ol>
         <p><strong>Resultado:</strong> x² + 10x + 24</p>
 
@@ -49,9 +49,9 @@ contenidoEntrada = `
          <p><strong>Ejemplo:</strong></p>
             <p>Desarrolla (x + 6)(x - 6) :</p>
           <ol>
-             <li>Cuadrado del primero: x²</li>
-             <li>Cuadrado del segundo: 6² = 36</li>
-             <li>Cambio de signo a negativo: x² - 36</li>
+             <li> <strong>Cuadrado del primero:</strong> x²</li>
+             <li> <strong>Cuadrado del segundo:</strong> 6² = 36</li>
+             <li><strong>Cambio de signo a negativo:</strong> x² - 36</li>
          </ol>
         <p><strong>Resultado:</strong> x² - 36</p>
 

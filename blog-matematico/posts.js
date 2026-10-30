@@ -22,6 +22,14 @@ const publicaciones = [
     fecha: "2026-10-22",
     resumen: "Continuación con el tema de factorización, en este caso con temas más complejos y con una guía de pasos para decidir que tipo de caso se debe realizar."
 
+  },
+   {
+    id: "04ec",
+    titulo: "Ecuaciones de Primer Grado",
+    archivo: "entradas/Ecuaciones_Primer_Grado.js",
+    fecha: "2026-10-29",
+    resumen: "Introducción a las ecuaciones de primer grado y sus métodos de resolución."
+
   }
 
 ];

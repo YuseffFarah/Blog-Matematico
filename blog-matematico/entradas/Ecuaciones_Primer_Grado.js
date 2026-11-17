@@ -1,5 +1,5 @@
 contenidoEntrada = `
-<section>
+<section style="background-color: #f9f9f9; padding: 20px; border-radius: 5px;">
     <h2>Ecuaciones de Primer Grado</h2>
     <p>Presentando las ecuaciones de primer grado, con sus diferentes formas de presentación y sus métodos de resolución.</p>
         <p><strong>Procedimiento General para Resolver Ecuaciones de Primer Grado</strong> Para resolver una ecuación de primer grado, se deben seguir los siguientes pasos:</p>

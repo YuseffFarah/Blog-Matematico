@@ -1,5 +1,5 @@
 contenidoEntrada = `
-<section>
+<section style="background-color: #f9f9f9; padding: 20px; border-radius: 5px;">
     <h2>Factorización II</h2>
     <p>Continuando con la factorización, aquí veremos casos más complejos y cómo aplicarlos.</p>
 

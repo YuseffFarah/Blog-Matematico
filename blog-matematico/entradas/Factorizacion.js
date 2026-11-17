@@ -1,5 +1,5 @@
 contenidoEntrada = `
-<section>
+<section style="background-color: #f9f9f9; padding: 20px; border-radius: 5px;">
  <h2>Factorización I</h2>
     <p>La factorización es el proceso de deshacer una multiplicación, en la cual te dan el resultado y tu encuentras los factores que lo producen.</p>
  <h3>Término común</h3>

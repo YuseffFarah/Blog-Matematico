@@ -1,5 +1,5 @@
 contenidoEntrada = `
-<section>
+<section style="background-color: #f9f9f9; padding: 20px; border-radius: 5px;">
     <h2>Productos notables</h2>
     <p>Una variedad específica de binomios, de los cuales ya tenemos una forma
     fácil de resolverlos.</p>
